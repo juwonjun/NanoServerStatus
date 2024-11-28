@@ -82,9 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 기본 서버 정보 업데이트
     updateServerInfo('fanya');
 
-    // 5초마다 실시간 서버 상태 갱신
+    // 1초마다 실시간 서버 상태 갱신
     setInterval(() => {
         const selectedServer = serverSelect.value; // 현재 선택된 서버 종류
         updateServerInfo(selectedServer);
-    }, 5000); // 5000ms = 5초마다 갱신
+    }, 1000); // 1000ms = 1초마다 갱신
 });
